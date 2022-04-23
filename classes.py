@@ -78,19 +78,3 @@ class Car(Vehicle):
             self.turn_steering_wheel(direction)
         else:
             print("Didn't understand that direction")
-
-moto = Motorcycle('Yamaha', 'Ybr 125')
-car = Car('Toyota', 'Auris')
-
-for vehicle in [moto, car]:
-    print(vehicle)
-    vehicle.turn_engine_on()
-    vehicle.turn_headlight_on()
-    vehicle.start_driving()
-    vehicle.turn('left')
-    vehicle.turn('right')
-    print(vehicle)
-    vehicle.stop_driving()
-    vehicle.turn_engine_off()
-    vehicle.turn_headlight_off()
-    print()
